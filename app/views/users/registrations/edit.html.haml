@@ -1,0 +1,32 @@
+%h2{:style => "margin-left: 100px;"}="Edit #{current_user.email.to_s.humanize}"
+
+
+#sign-in.page{:style => "width:750px; margin-left: 100px;"}
+  .manual-sign-in
+    = form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f|
+      = devise_error_messages!
+      %dl
+        %dt= f.label :email
+        %dd= f.text_field :email
+      %dl
+        %dt= f.label :first_name
+        %dd= f.text_field :first_name
+      %dl
+        %dt= f.label :last_name
+        %dd= f.text_field :last_name
+      %dl
+        %dt= f.label :password
+        %i (leave blank if you don't want to change it)
+        %dd= f.password_field :password
+      %dl
+        %dt= f.label :password_confirmation
+        %dd= f.password_field :password_confirmation
+      %dl
+        %dt= f.label :current_password
+        %i (we need your current password to confirm your changes)
+        %dd= f.password_field :current_password
+
+      %br/
+      = f.submit "Update"
+
+  %br{:style => "clear:both;"}

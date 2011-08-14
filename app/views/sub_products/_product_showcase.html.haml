@@ -1,0 +1,21 @@
+%div
+  %img{:height => "30", :src => "/images/strip_03.jpg", :width => "771"}
+%div{:style => "border:1px solid #ccc;"}
+  %ul.products
+    - sub_products.each do |product|
+      %li
+        %span.package-new-text
+          =product.name
+        %span.price_heading
+          =product.price
+        %br
+          = link_to image_tag("SubProductPageImages/"+product.image, :style => "margin-top:10px; margin-bottom:6px; width:198; height:82;"), product_sub_product_packages_path(product, product)
+          %br
+            %span.package-new-small-text
+              =format_note_text(CGI.unescapeHTML(product.description).gsub(/<\/?.*?>/,''), 100)
+            %br
+              %a{:href => "http://www.kooldesignmaker.com/logo-design"}
+                = link_to image_tag("/images/packages_38.jpg", :style => "margin-top:5px; height:22px; border:none; float:right;"), product_sub_product_packages_path(product, product)
+  %br{:style => "clear:both;"}/
+%div
+  %img{:height => "30", :src => "/images/kdm-inner-page-bottom.jpg", :width => "771"}

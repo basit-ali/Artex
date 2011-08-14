@@ -1,0 +1,16 @@
+%h2{:style => "margin-left: 100px;"} Forgot your password?
+
+#sign-in.page{:style => "width:750px; margin-left: 100px;"}
+
+  .manual-sign-in
+    - form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :post }) do |f|
+      - devise_error_messages!
+      %dl
+        %dt= f.label :email
+        %dd= f.text_field :email
+
+      = f.submit "Send me reset password instructions"
+      %br/
+      %br/
+      = render :partial => "users/shared/links"
+  %br{:style => "clear:both;"}

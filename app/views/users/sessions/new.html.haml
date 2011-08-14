@@ -1,0 +1,31 @@
+%h2{:style => "margin-left: 100px;"} Sign in
+
+#sign-in.page{:style => "width:750px; margin-left: 100px;"}
+
+  .manual-sign-in
+    - form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f|
+      %dl
+        %dt= f.label :email
+        %dd= f.text_field :email
+      %dl
+        %dt= f.label :password
+        %dd= f.password_field :password
+
+      - if devise_mapping.rememberable?
+        %dl
+          %dt
+            %label{ :for => "user_remember_me" }
+              = f.check_box :remember_me
+              Remember me
+
+        = f.submit "Sign in"
+
+        %br/
+        %br/
+
+        = render :partial => "users/shared/links"
+  .service_integration.facebook
+    %h4 Facebook Connect
+    %p Sign in or register using your Facebook account
+    /%p= render :partial => 'shared/fb_login'
+  %br{:style => "clear:both;"}

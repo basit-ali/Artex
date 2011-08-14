@@ -1,0 +1,683 @@
+body {
+  margin: auto;
+  width: 1003px; }
+
+#container {
+  margin: auto;
+  width: 1003px;
+  height: auto; }
+
+.header {
+  height: 103px;
+  width: 1003px;
+  background: url(/images/header-3.jpg) repeat-x scroll 0% 0% transparent; }
+
+.telltxt {
+  float: left;
+  background: url(/images/kdm-email-bg.jpg) no-repeat scroll 0% 0% transparent;
+  width: 143px;
+  height: 24px;
+  padding-top: 3px;
+  padding-left: 10px; }
+
+.support {
+  float: left; }
+
+.sendbtn {
+  width: 44px;
+  height: 26px;
+  float: left; }
+
+.tellimg {
+  margin-bottom: 5px;
+  margin-top: 15px; }
+
+.tellafriend {
+  width: 217px;
+  height: 103px;
+  float: left; }
+
+.bookmark {
+  float: left;
+  margin-left: 14px; }
+
+.login {
+  width: 172px;
+  height: auto; }
+
+#loginbg {
+  margin-top: 5px;
+  width: 172px;
+  height: 188px;
+  background: url(/images/login.png) no-repeat scroll 0% 0% transparent; }
+
+form {
+  margin: 0px;
+  padding: 0px; }
+
+.leftnav-head {
+  padding-bottom: 0px; }
+
+#left-nav {
+  height: auto;
+  padding-top: 0px;
+  left: 0px;
+  width: 172px;
+  top: 290px;
+  margin-top: 5px; }
+
+#leftbar {
+  width: 172px;
+  float: left; }
+
+.flash-header {
+  height: 468px;
+  width: 812px;
+  float: left;
+  left: 0px;
+  right: 0px;
+  top: 110px; }
+
+.inner-content {
+  width: 750px;
+  margin-top: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 10px; }
+
+.big-buttons {
+  margin-left: 180px; }
+
+#nav-tab {
+  background: url(/images/kdm_03.jpg) repeat scroll 0% 0% transparent;
+  width: 147px;
+  height: 30px;
+  float: left;
+  line-height: 26px;
+  font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: black;
+  padding-left: 25px;
+  display: inline; }
+
+.headingorange {
+  color: #ff4103; }
+
+a:link {
+  color: black;
+  text-decoration: none; }
+a:visited {
+  color: black;
+  text-decoration: none; }
+a:hover {
+  color: #ff6600;
+  text-decoration: underline; }
+a:active {
+  color: black;
+  text-decoration: none; }
+
+.style1 {
+  font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: bold; }
+
+.style2 {
+  font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+  font-size: 12px; }
+
+.style4 {
+  font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  font-weight: bold; }
+
+.style6 {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  color: #474644; }
+
+.package-new {
+  background-image: url(/images/inner-bg-26.jpg);
+  width: 200px;
+  height: 206px;
+  float: left;
+  padding: 10px;
+  background-repeat: no-repeat; }
+
+.package-new-text {
+  font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bold; }
+
+.package-new-small-text {
+  font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+  font-size: 12px; }
+
+#homepage {
+  padding: 15px;
+  text-align: justify;
+  width: 762px;
+  float: left; }
+
+.group_div {
+  height: 20px;
+  background: url(/images/group-bg1.jpg) repeat scroll 0% 0% transparent;
+  font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  padding: 7px 5px 3px 12px;
+  color: black; }
+
+h1 {
+  margin: 0px;
+  padding: 0px; }
+
+.anchor-orange:link {
+  color: black;
+  text-decoration: underline; }
+.anchor-orange:visited {
+  color: black;
+  text-decoration: underline; }
+.anchor-orange:hover {
+  color: #ff6600;
+  text-decoration: underline; }
+.anchor-orange:active {
+  color: black;
+  text-decoration: underline; }
+
+/* ::::: http://www.kooldesignmaker.com/common/validationEngine.jquery.css ::::: */
+.formError {
+  display: block;
+  z-index: 5000;
+  left: 300px;
+  padding-bottom: 13px;
+  position: absolute;
+  top: 300px; }
+  .formError .formErrorContent {
+    border: 2px solid #dddddd;
+    padding: 4px 10px;
+    font-size: 12px;
+    background: none repeat scroll 0% 0% #ee0101;
+    width: 230px;
+    color: white;
+    font-family: tahoma; }
+  .formError .formErrorArrow {
+    z-index: 5001;
+    left: 20px;
+    width: 15px;
+    bottom: 0px;
+    position: absolute;
+    height: 15px; }
+    .formError .formErrorArrow div {
+      border-right: 2px solid #dddddd;
+      display: block;
+      font-size: 0px;
+      background: none repeat scroll 0% 0% #ee0101;
+      margin: 0px auto;
+      border-left: 2px solid #dddddd;
+      line-height: 0px;
+      height: 1px; }
+    .formError .formErrorArrow .line10 {
+      width: 15px;
+      border-style: none; }
+    .formError .formErrorArrow .line9 {
+      width: 13px;
+      border-style: none; }
+    .formError .formErrorArrow .line8 {
+      width: 11px; }
+    .formError .formErrorArrow .line7 {
+      width: 9px; }
+    .formError .formErrorArrow .line6 {
+      width: 7px; }
+    .formError .formErrorArrow .line5 {
+      width: 5px; }
+    .formError .formErrorArrow .line4 {
+      width: 3px; }
+    .formError .formErrorArrow .line3 {
+      border-right: 2px solid #dddddd;
+      border-left: 2px solid #dddddd;
+      width: 1px;
+      border-bottom: 0px solid #dddddd; }
+    .formError .formErrorArrow .line2 {
+      background: none repeat scroll 0% 0% #dddddd;
+      width: 3px;
+      border-style: none; }
+    .formError .formErrorArrow .line1 {
+      background: none repeat scroll 0% 0% #dddddd;
+      width: 1px;
+      border-style: none; }
+
+/* ::::: http://www.kooldesignmaker.com/styles.css ::::: */
+body {
+  margin: auto;
+  width: 1003px; }
+
+#container {
+  margin: auto;
+  width: 1003px;
+  height: auto; }
+
+.header {
+  height: 103px;
+  width: 1003px;
+  background: url(/images/header-3.jpg) repeat-x scroll 0% 0% transparent; }
+
+.telltxt {
+  float: left;
+  background: url(/images/kdm-email-bg.jpg) no-repeat scroll 0% 0% transparent;
+  width: 143px;
+  height: 24px;
+  padding-top: 3px;
+  padding-left: 10px; }
+
+.support {
+  float: left; }
+
+.sendbtn {
+  width: 44px;
+  height: 26px;
+  float: left; }
+
+.tellimg {
+  margin-bottom: 5px;
+  margin-top: 15px; }
+
+.tellafriend {
+  width: 217px;
+  height: 103px;
+  float: left; }
+
+.bookmark {
+  float: left;
+  margin-left: 14px; }
+
+.login {
+  width: 172px;
+  height: auto; }
+
+#loginbg {
+  margin-top: 5px;
+  width: 172px;
+  height: 188px;
+  background: url(/images/login.png) no-repeat scroll 0% 0% transparent; }
+
+form {
+  margin: 0px;
+  padding: 0px; }
+
+.leftnav-head {
+  padding-bottom: 0px; }
+
+#left-nav {
+  height: auto;
+  padding-top: 0px;
+  left: 0px;
+  width: 172px;
+  top: 290px;
+  margin-top: 5px; }
+
+#leftbar {
+  width: 172px;
+  float: left; }
+
+.flash-header {
+  height: 468px;
+  width: 812px;
+  float: left;
+  left: 0px;
+  right: 0px;
+  top: 110px; }
+
+.inner-content {
+  width: 750px;
+  margin-top: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 10px; }
+
+.big-buttons {
+  margin-left: 180px; }
+
+#nav-tab {
+  background: url(/images/kdm_03.jpg) repeat scroll 0% 0% transparent;
+  width: 147px;
+  height: 30px;
+  float: left;
+  line-height: 26px;
+  font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: black;
+  padding-left: 25px;
+  display: inline; }
+
+.headingorange {
+  color: #ff4103; }
+
+a:link {
+  color: black;
+  text-decoration: none; }
+a:visited {
+  color: black;
+  text-decoration: none; }
+a:hover {
+  color: #ff6600;
+  text-decoration: underline; }
+a:active {
+  color: black;
+  text-decoration: none; }
+
+.style1 {
+  font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: bold; }
+
+.style2 {
+  font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+  font-size: 12px; }
+
+.style4 {
+  font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  font-weight: bold; }
+
+.style6 {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  color: #474644; }
+
+.package-new {
+  background-image: url(/images/inner-bg-26.jpg);
+  width: 200px;
+  height: 206px;
+  float: left;
+  padding: 10px;
+  background-repeat: no-repeat; }
+
+.package-new-text {
+  font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bold; }
+
+.package-new-small-text {
+  font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+  font-size: 12px; }
+
+#homepage {
+  padding: 15px;
+  text-align: justify;
+  width: 762px;
+  float: left; }
+
+.group_div {
+  height: 20px;
+  background: url(/images/group-bg1.jpg) repeat scroll 0% 0% transparent;
+  font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  padding: 7px 5px 3px 12px;
+  color: black; }
+
+h1 {
+  margin: 0px;
+  padding: 0px; }
+
+.anchor-orange:link {
+  color: black;
+  text-decoration: underline; }
+.anchor-orange:visited {
+  color: black;
+  text-decoration: underline; }
+.anchor-orange:hover {
+  color: #ff6600;
+  text-decoration: underline; }
+.anchor-orange:active {
+  color: black;
+  text-decoration: underline; }
+
+/* ::::: http://www.kooldesignmaker.com/styles.css ::::: */
+body {
+  margin: auto;
+  width: 1003px; }
+
+#container {
+  margin: auto;
+  width: 1003px;
+  height: auto; }
+
+.header {
+  height: 103px;
+  width: 1003px;
+  background: url(/images/header-3.jpg) repeat-x scroll 0% 0% transparent; }
+
+.telltxt {
+  float: left;
+  background: url(/images/kdm-email-bg.jpg) no-repeat scroll 0% 0% transparent;
+  width: 143px;
+  height: 24px;
+  padding-top: 3px;
+  padding-left: 10px; }
+
+.support {
+  float: left; }
+
+.sendbtn {
+  width: 44px;
+  height: 26px;
+  float: left; }
+
+.tellimg {
+  margin-bottom: 5px;
+  margin-top: 15px; }
+
+.tellafriend {
+  width: 217px;
+  height: 103px;
+  float: left; }
+
+.bookmark {
+  float: left;
+  margin-left: 14px; }
+
+.login {
+  width: 172px;
+  height: auto; }
+
+#loginbg {
+  margin-top: 5px;
+  width: 172px;
+  height: 188px;
+  background: url(/images/login.png) no-repeat scroll 0% 0% transparent; }
+
+form {
+  margin: 0px;
+  padding: 0px; }
+
+.leftnav-head {
+  padding-bottom: 0px; }
+
+#left-nav {
+  height: auto;
+  min-height: 400px;
+  padding-top: 0px;
+  left: 0px;
+  width: 172px;
+  top: 290px;
+  margin-top: 0px; }
+
+#leftbar {
+  width: 172px;
+  float: left; }
+
+.flash-header {
+  height: 468px;
+  width: 812px;
+  float: left;
+  left: 0px;
+  right: 0px;
+  top: 110px; }
+
+.inner-content {
+  width: 750px;
+  margin-top: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 10px; }
+
+.big-buttons {
+  margin-left: 180px; }
+
+#nav-tab {
+  background: url(/images/kdm_03.jpg) repeat scroll 0% 0% transparent;
+  width: 147px;
+  height: 30px;
+  float: left;
+  line-height: 26px;
+  font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: black;
+  padding-left: 25px;
+  display: inline; }
+
+.headingorange {
+  color: #ff4103; }
+
+a:link {
+  color: black;
+  text-decoration: none; }
+a:visited {
+  color: black;
+  text-decoration: none; }
+a:hover {
+  color: #ff6600;
+  text-decoration: underline; }
+a:active {
+  color: black;
+  text-decoration: none; }
+
+.style1 {
+  font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: bold; }
+
+.style2 {
+  font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+  font-size: 12px; }
+
+.style4 {
+  font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  font-weight: bold; }
+
+.style6 {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  color: #474644; }
+
+.package-new {
+  background-image: url(/images/pack_des.jpg);
+  width: 350px;
+  height: 206px;
+  float: left;
+  padding: 10px;
+  background-repeat: repeat; }
+
+.package-new-text {
+  font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bold; }
+
+.package-new-small-text {
+  font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+  font-size: 12px; }
+
+#homepage {
+  padding: 15px;
+  text-align: justify;
+  width: 762px;
+  float: left; }
+
+.group_div {
+  height: 20px;
+  background: url(/images/group-bg1.jpg) repeat scroll 0% 0% transparent;
+  font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  padding: 7px 5px 3px 12px;
+  color: black; }
+
+h1 {
+  margin: 0px;
+  padding: 0px; }
+
+.anchor-orange:link {
+  color: black;
+  text-decoration: underline; }
+.anchor-orange:visited {
+  color: black;
+  text-decoration: underline; }
+.anchor-orange:hover {
+  color: #ff6600;
+  text-decoration: underline; }
+.anchor-orange:active {
+  color: black;
+  text-decoration: underline; }
+
+.stylefooter {
+  font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  color: #666666; }
+
+.style2 {
+  font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  color: black;
+  line-height: 22px; }
+
+.homemenu2:link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold; }
+.homemenu2:visited {
+  text-decoration: none;
+  color: white;
+  font-weight: bold; }
+.homemenu2:hover {
+  text-decoration: none;
+  color: #f75f0d;
+  font-weight: bold; }
+.homemenu2:active {
+  text-decoration: none;
+  color: white;
+  font-weight: bold; }
+
+.homemenu:link {
+  color: #666666;
+  text-decoration: none;
+  font-weight: bold; }
+.homemenu:visited {
+  text-decoration: none;
+  color: #666666;
+  font-weight: bold; }
+.homemenu:hover {
+  text-decoration: underline;
+  color: #f75f0d;
+  font-weight: bold; }
+.homemenu:active {
+  text-decoration: none;
+  color: #666666;
+  font-weight: bold; }
+
+.footerlink:link {
+  color: black;
+  text-decoration: none; }
+.footerlink:visited {
+  text-decoration: none;
+  color: black; }
+.footerlink:hover {
+  color: #f75f0d;
+  font-weight: bold; }
+.footerlink:active {
+  text-decoration: none;
+  color: black; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }

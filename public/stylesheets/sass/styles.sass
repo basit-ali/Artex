@@ -1,0 +1,590 @@
+html
+  height: 100%
+
+body
+  height: 100%
+  font-family: Arial,Georgia, "Times New Roman", Times, serif
+  font-size: 11px
+  color: #646464
+  margin: 0px
+  padding: 0px
+  background-color: #ffffff
+  background-image: url(/images/bodyBg.jpg)
+  background-repeat: repeat-x
+
+*
+  z-index: 0
+
+a, img
+  border: 0px none
+
+.link a
+  text-decoration: none
+  color: #818181
+  &:hover
+    text-decoration: none
+    color: #ffffff
+
+.clear
+  clear: both
+  line-height: 0px
+  height: 0px
+  font-size: 0px
+
+p
+  padding: 0px 10px
+  margin: 0px
+  font-family: Arial, Helvetica, sans-serif
+  font-size: 12px
+
+h1, h2, h3
+  font-family: Georgia, "Times New Roman", Times, serif
+
+/*............
+
+#outer-container
+  margin: 0 auto
+  padding: 0
+  padding-bottom: 20px
+  width: 990px
+  min-height: 580px
+  height: auto !important
+  height: auto
+
+#main-container
+  padding: 0px
+  margin: 0px
+  width: 990px
+  min-height: 580px
+  height: auto !important
+  height: auto
+
+/*.....MENU.......
+
+#topmenu
+  padding: 0px
+  margin: 0px
+  width: 990px
+  height: 54px
+  background-image: url(/images/menuBg.jpg)
+  background-repeat: repeat-x
+
+.menuleft
+  padding: 0px
+  margin: 0px
+  width: 5px
+  float: left
+
+.menuright
+  padding: 0px
+  margin: 0px
+  width: 6px
+  float: right
+
+.logo
+  padding: 0px
+  margin: 0px
+  width: 250px
+  float: left
+
+.menulinks
+  padding: 0px
+  margin: 0px
+  width: 728px
+  float: left
+  text-align: right
+  a
+    text-decoration: none
+    padding: 0px 10px
+    font-family: Arial, Helvetica, sans-serif
+    font-size: 12px
+    line-height: 50px
+    color: #000000
+.menulinks
+  a:hover
+    text-decoration: none
+    color: #660066
+  span
+    color: #f6b625
+
+.menuShadow
+  padding: 0px
+  margin: 0px
+  width: 990px
+  height: 10px
+  background-image: url(/images/shadow.jpg)
+  background-repeat: repeat-x
+
+.menushadowleft
+  width: 23px
+  height: 10px
+  float: left
+
+.menushadowright
+  width: 23px
+  height: 10px
+  float: right
+
+/*.....MAIN BODY.......
+
+#mainBody
+  padding: 0px
+  padding-top: 10px
+  margin: 0px
+  width: 990px
+  min-height: 300px
+  height: auto !important
+  height: auto
+  float: left
+
+#mainLeft
+  padding: 0px
+  margin: 0px
+  width: 304px
+  float: right
+
+#SearchBox
+  padding: 0px
+  margin: 0px
+  width: 304px
+  height: 190px
+  float: left
+
+.searchTitle
+  padding: 0px
+  padding-left: 15px
+  margin: 0px
+  width: 289px
+  height: 30px
+  font-family: Georgia, "Times New Roman", Times, serif
+  font-size: 20px
+  line-height: 30px
+  color: #FFFFFF
+  background-image: url(/images/searchTitleBg.jpg)
+  background-repeat: no-repeat
+
+.panelShadow
+  padding: 0px
+  padding-bottom: 5px
+  margin: 0px
+  width: 304px
+  height: 10px
+  overflow: hidden
+
+.searchDropdownbig
+  padding: 0px
+  margin: 0px
+  width: 175px
+
+.searchDropdownsmall
+  padding: 0px
+  margin: 0px
+  width: 64px
+
+#newsBox
+  padding: 0px
+  margin: 0px
+  width: 304px
+  float: left
+
+.newsTitle
+  padding: 0px
+  padding-left: 15px
+  margin: 0px
+  width: 289px
+  height: 30px
+  font-family: Georgia, "Times New Roman", Times, serif
+  font-size: 20px
+  line-height: 30px
+  color: #FFFFFF
+  background-image: url(/images/newTitleBg.jpg)
+  background-repeat: no-repeat
+
+.newsSegment
+  padding: 5px
+  padding-bottom: 10px
+  margin: 0px
+  width: 284px
+  line-height: 14px
+  border-bottom: dotted 1px #999999
+
+.newsDate
+  padding: 0px
+  margin: 0px
+  color: #646464
+  font-size: 12px
+
+.newsheading
+  padding: 0px
+  margin: 0px
+  color: #646464
+  font-size: 12px
+  font-weight: bold
+  font-family: Arial, Helvetica, sans-serif
+
+.newscontent
+  padding: 0px
+  padding-bottom: 10px
+  margin: 0px
+  font-family: Arial, Helvetica, sans-serif
+
+.readmore a
+  text-decoration: none
+  padding: 0px
+  padding-right: 10px
+  margin: 0px
+  font-family: Georgia, "Times New Roman", Times, serif
+  color: #FF0000
+  display: block
+  float: right
+  &:hover
+    text-decoration: underline
+    color: #000000
+
+#contactBox
+  padding: 0px
+  margin: 0px
+  width: 304px
+  float: left
+
+.contactTitle
+  padding: 0px
+  padding-left: 15px
+  margin: 0px
+  width: 289px
+  height: 30px
+  font-family: Georgia, "Times New Roman", Times, serif
+  font-size: 20px
+  line-height: 30px
+  float: left
+  color: #FFFFFF
+  background-image: url(/images/contactTitleBg.jpg)
+  background-repeat: no-repeat
+
+.contactnumber
+  padding: 0px
+  margin: 0px
+  font-size: 30px
+  line-height: 50px
+  color: #303030
+  text-align: center
+  display: block
+
+.free
+  padding: 0px
+  padding-right: 50px
+  margin: 0px
+  font-size: 17px
+  color: #303030
+  text-align: right
+  display: block
+
+#mainRight
+  padding: 0px
+  margin: 0px
+  width: 671px
+  float: left
+.banner
+  padding: 0px
+  margin: 0px
+  width: 665px
+  height: 243px
+  float: left
+
+#rightcontents
+  padding: 10px 0px 10px 10px
+  margin: 0px
+  width: 661px
+  float: left
+
+#mainRight h1
+  text-decoration: none
+  font-size: 24px
+  line-height: 30px
+
+#featured
+  padding: 0px
+  padding-bottom: 20px
+  margin: 0px
+  width: 671px
+  float: left
+
+#mainRight h2
+  padding: 0px
+  padding-bottom: 10px
+  padding-left: 25px
+  margin: 0px
+  text-decoration: none
+  font-size: 20px
+
+#featuredList
+  padding: 10px
+  padding-top: 5px
+  margin: 0px
+  width: 650px
+  height: 248px
+  float: left
+  background-image: url(/images/featuredBox.jpg)
+  background-repeat: no-repeat
+
+.featuredSegment
+  padding: 0px 40px 15px 40px
+  margin-top: 15px
+  width: 135px
+  height: 185px
+  float: left
+  text-align: center
+  border-right: 1px dotted #CCCCCC
+
+#footer
+  padding: 0px
+  margin: 0px
+  width: 990px
+  height: 59px
+  background-image: url(/images/footerBg.jpg)
+  background-repeat: repeat-x
+
+.footerleft
+  padding: 0px
+  margin: 0px
+  width: 9px
+  float: left
+
+.footerright
+  padding: 0px
+  margin: 0px
+  width: 9px
+  float: right
+
+.footermid
+  padding: 0px
+  margin: 0px
+  width: 972px
+  float: left
+  a
+    text-decoration: none
+    color: #666666
+    &:hover
+      text-decoration: none
+      color: #FFA337
+
+.copyright
+  padding: 20px 0px 0px 15px
+  margin: 0px
+  font-size: 11px
+  color: #666666
+  float: left
+
+.footermenu
+  padding: 20px 15px 0px 0px
+  float: left
+  a
+    padding: 0px 5px
+    text-decoration: none
+    font-size: 11px
+    color: #666666
+
+.titleDev
+  float: right
+  padding: 3px 15px 0px 0px
+  a
+    text-decoration: none
+    color: #FFFFFF
+    &:hover
+      text-decoration: none
+      color: #f6b01d
+
+.propertyDetial
+  padding: 5px
+  padding-top: 10px
+  margin: 0px
+  margin-bottom: 10px
+  width: 633px
+  float: left
+  vertical-align: middle
+  background-color: #fffbee
+  border: 1px solid #CCCCCC
+
+.propertyshowcase
+  padding: 5px
+  padding-top: 10px
+  margin: 0px
+  margin-top: 10px
+  width: 620px
+  float: left
+  vertical-align: middle
+  border: 1px solid #CCCCCC
+
+.propertythunbnail
+  padding: 0px
+  margin: 7px
+  width: 140px
+  float: left
+  vertical-align: middle
+
+.propertyImg
+  padding: 0px
+  margin: 0px
+  width: 132px
+  height: 81px
+  float: left
+
+.propertyImgBig
+  padding: 0px
+  margin: 0px
+  width: 160px
+  height: 81px
+  float: left
+
+.proertyDescription
+  padding: 0px
+  padding-left: 10px
+  margin: 0px
+  width: 490px
+  min-height: 81px
+  height: auto !important
+  height: auto
+  float: left
+
+.proertyDesc
+  padding: 0px
+  padding-left: 10px
+  margin: 0px
+  width: 600px
+  float: left
+
+.contentData
+  padding: 0x
+  padding-left: 10px
+  margin: 0px
+  float: left
+  width: 400px
+
+.proertyDescriptionbig
+  padding: 0px
+  padding-left: 10px
+  margin: 0px
+  width: 470px
+  min-height: 81px
+  height: auto !important
+  height: auto
+  float: left
+  background-color: #fff
+
+.proertyDescription p
+  padding: 0px !important
+
+.propTR
+  padding: 0px
+  margin: 0px
+  width: 490px
+  height: 15px
+  float: left
+
+.propLT
+  padding: 0px
+  margin: 0px
+  width: 50px
+  height: 15px
+  float: left
+  font-weight: bold
+
+.propRT
+  padding: 0px
+  margin: 0px
+  margin-left: 60px
+  height: 15px
+
+.sendInquiry
+  padding: 0px
+  padding-right: 10px
+  margin: 0px
+  float: right
+
+#contact-area
+  width: 330px
+  margin-top: 10px
+  float: left
+  input, textarea
+    padding: 2px
+    width: 250px
+    font-family: Arial, Helvetica, sans-serif
+    font-size: 12px
+    margin: 0px 0px 10px 0px
+    color: #333333
+    border: 1px solid #999999
+  select
+    padding: 2px
+    width: 255px
+    font-family: Helvetica, sans-serif
+    font-size: 11px
+    margin: 0px 0px 10px 0px
+    color: #333333
+    background-color: #CCCCCC
+    border: none
+  textarea
+    height: 90px
+    &:focus
+      background-color: #fffaea
+  input:focus, select:focus
+    background-color: #fffaea
+  input.submit-button
+    margin-right: 10px
+    width: 75px
+    float: right
+    color: #ffffff
+    background-color: #3f3f3f
+
+.label
+  float: left
+  text-align: right
+  margin-right: 15px
+  width: 50px
+  font-family: Arial, Helvetica, sans-serif
+  padding-top: 5px
+  font-size: 11px
+
+#address-area
+  width: 300px
+  margin-top: 25px
+  font-size: 12px
+  float: right
+
+.newsDetails
+  padding: 0px
+  padding-bottom: 10px
+  margin: 0px
+  width: 500px
+  float: left
+  text-align: left
+
+.newsDetailHeading
+  padding: 0px
+  padding-bottom: 5px
+  margin: 0px
+  text-align: left
+  font-size: 15px
+  font-weight: bold
+
+#paging
+  padding: 5px
+  padding-right: 15px
+  font-family: Arial, Helvetica, sans-serif
+  font-size: 11px
+  color: #000000
+  float: right
+  a
+    padding: 3px 5px 3px 5px
+    margin: 0px 2px 0px 2px
+    background: #464646
+    color: #ffffff
+    text-decoration: none
+    &:hover
+      background: #FF9900
+      color: #FFFFFF
+      text-decoration: none
+  .current
+    background: #FF9900
+    color: #FFFFFF
+    text-decoration: none
+

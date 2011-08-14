@@ -1,0 +1,25 @@
+%html{:dir => "ltr", :lang => "en-US", :xmlns => "http://www.w3.org/1999/xhtml"}
+  %head
+    %title CreativeArts
+    = stylesheet_link_tag  "style", 'jquery.jcarousel', 'index.css', 'index-kmd', 'forms'
+    = include_tiny_mce_if_needed
+    %link{:href => "css/images/favicon.ico", :rel => "shortcut icon"}
+    %script{:src => "/javascripts/jquery-1.4.2.min.js", :type => "text/javascript"}
+    %script{:src => "/javascripts/jquery.jcarousel.pack.js", :type => "text/javascript"}
+    %script{:src => "/javascripts/func.js", :type => "text/javascript"}%body
+  %body
+    .shell
+      .border
+        = render :partial => 'shared/header'
+        - if notice.present?
+          .alert-message{:align => "center", :style => "margin-top: 15px;"}
+            .notice
+              %h2= notice
+        - if alert.present?
+          .alert-message{:align => "center", :style => "margin-top: 15px;"}
+            .alert
+              %h2= alert
+        #main
+          = yield
+          %br{:style => "clear:both;"}
+      = render :partial => 'shared/footer'

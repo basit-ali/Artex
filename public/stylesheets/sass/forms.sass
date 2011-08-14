@@ -1,0 +1,180 @@
+=form-inputs
+  border: 1px solid #ccc
+  -webkit-border-radius: 0.25em
+  -moz-border-radius: 0.25em
+  background: #fafafa
+  padding: 2px
+  color: #606060
+  font: inherit
+  
+=fancy-button
+  padding: 0.4em 0.75em
+  margin: 0 3px
+  background: #ddd url(/stylesheets/vendor/images/button-background.png) repeat-x
+  font-weight: bold
+  color: #333
+  -webkit-border-radius: 1em
+  -moz-border-radius: 1em
+  border: 1px solid #aaa
+  border-right-color: #a0a0a0
+  border-bottom-color: #999
+  text-shadow: 0 1px 0 rgba(255,255,255,0.33)
+  font-size: 0.85em
+  position: relative
+  text-decoration: none
+  float: left
+  cursor: pointer
+  overflow:visible
+
+form
+  h4
+    margin: 15px 0
+    font-size: 1.1em
+    font-weight: bold
+  .left-col
+    width: 445px
+    float: left
+    margin-bottom: 30px
+  .right-col
+    width: 220px
+    float: left
+    margin-bottom: 30px
+  .right-most-col
+    width: 230px
+    float: left
+    margin-bottom: 30px
+    margin-top: -0px
+  fieldset.divider
+    clear: both
+    margin-top: 15px
+    border-top: 1px solid #ccc
+  dl
+    margin-bottom: 15px
+    dt
+      padding: 0 0 5px 0
+      label
+        font-weight: bold
+        font-size: 90%
+    dd
+      input[type='text'], input[type='password']
+        +form-inputs
+        width: 194px
+        height: 35px
+      input[type='submit']
+        +form-inputs
+      textarea
+        +form-inputs
+        max-height: 400px
+  dl.float
+    margin-right: 20px
+    float: left
+  dl.narrow
+    dd
+      input[type='text'], input[type='password']
+        width: 96px
+  .actions
+    margin-top: 20px
+    clear: both
+    button
+      +fancy-button
+      top: -5px
+    .button
+      +fancy-button
+  ul.radios
+    label
+      font-weight: bold
+      font-size: 90%
+  .left_col_width
+    width: 426px      
+
+#register
+  position: relative
+  h4
+    margin-bottom: 15px
+    font-size: 1.1em
+    font-weight: bold
+  fieldset.radios
+    padding: 0 0 20px 0
+    margin: 0 0 20px 0
+    border-bottom: 1px solid #cccccc
+    dl
+      width: 420px
+      margin: 0 10px
+      float: left
+  fieldset.register-email
+    width: 420px
+    padding-top: 0
+    border-right: 1px solid #cccccc
+    .actions
+      float: left
+      clear: none
+      margin-top: 16px
+  .register-facebook
+    position: absolute
+    left: 420px
+    bottom: 130px
+    z-index: 1
+    width: 300px
+    padding: 0 0 0 30px
+    border-left: 1px solid #cccccc
+  .actions
+    button
+      margin: 0 10px 0 0
+
+#new_donation
+  dl#donation_name
+    input[type=text]
+      display: block
+    dd label
+      font-size: 80%
+  dl#donation_amount
+    input[type=text]
+      width: 60px
+      text-indent: 0
+
+#new-project
+  input[type="file"]
+    margin: 0 0 10px 0
+  img
+    display: block
+    margin: 0 0 15px 0
+  dd
+  p.explanation
+    width: 400px
+    font-size: .8em
+    font-style: italic
+  ul.radios
+    padding: 0 0 8px 0
+
+#sign-in
+  form#login
+    float: left
+    width: 375px
+    border-right: 1px solid #cccccc
+  .actions
+    padding: 0 0 20px 0
+    button
+      margin: 0
+    p
+      clear: both
+      padding: 5px 0 0 0
+      font-size: .9em
+      color: #999999
+      a
+        margin: 0 5px
+        &:first-child
+          margin-left: 0
+  h4
+    padding: 0 0 10px 0
+    margin: 0
+    font-size: 1.1em
+    font-weight: bold
+  .service_integration
+    float: left
+    padding: 0 0 0 20px
+    margin: 0 0 0 -1px
+    border-left: 1px solid #cccccc
+    height: 210px
+  .manual-sign-in
+    width: 375px
+    float: left

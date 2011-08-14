@@ -1,0 +1,11 @@
+%h2{:style => "margin-left: 100px;"}="Place Your Order"
+
+
+#sign-in.page{:style => "width:750px; margin-left: 100px;"}
+  .manual-sign-in
+    - form_for new_order, :url => orders_path, :html => { :multipart => true } do |f|
+      = render 'form', :f => f
+      %br/
+      = f.submit "Submit"
+
+  %br{:style => "clear:both;"}

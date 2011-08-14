@@ -1,0 +1,8 @@
+#myslides
+  .rightone#mygallery-paginate
+    %img{"data-moveby" => "1", "data-over" => "images/graycircle.png", "data-select" => "images/closedcircle.png", :src => "images/opencircle.png"}
+  #mygallery.stepcarousel
+    .belt
+      - products.each do |product|
+        .panel{:style => "float: none; position: absolute;"}
+          %img{:src => "/images/ProductPageImages/#{product.image}"}

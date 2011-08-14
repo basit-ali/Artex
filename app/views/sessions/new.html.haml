@@ -1,0 +1,34 @@
+- content_for :head do
+  = stylesheet_link_tag 'forms'
+  
+%h2 Sign in
+
+#sign-in.page
+
+  - form_for resource_name, resource, :html => {:id => "login"}, :url => session_path(resource_name) do |f|
+    = render 'shared/unauthorized_access_alert'
+    %dl
+      %dt= f.label :email
+      %dd= f.text_field :email
+    %dl
+      %dt= f.label :password
+      %dd= f.password_field :password
+    - if devise_mapping.rememberable?
+      %dl
+        %dt
+          %label{ :for => "user_remember_me" }
+            = f.check_box :remember_me
+            Remember me
+    .actions
+      %button(type='submit') Sign in
+      %p
+        - if devise_mapping.recoverable?
+          = link_to "Forgot password?", new_password_path(resource_name)
+        -# if devise_mapping.confirmable?
+          \|
+          = link_to "Didn't receive confirmation instructions?", new_confirmation_path(resource_name)
+
+  -#.service_integration.facebook
+    %h4 Facebook Connect
+    %p Sign in or register using your Facebook account
+    %p= render :partial => 'shared/fb_login'

@@ -1,0 +1,21 @@
+%h2{:style => "margin-left: 100px;"} Sign up
+
+#sign-in.page{:style => "width:750px; margin-left: 100px;"}
+  .manual-sign-in
+    = form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f|
+      = devise_error_messages!
+      %dl
+        %dt= f.label :email
+        %dd= f.text_field :email
+      %dl
+        %dt= f.label :password
+        %dd= f.password_field :password
+      %dl
+        %dt= f.label :password_confirmation
+        %dd= f.password_field :password_confirmation
+      %br/
+      %p= f.submit "Sign up"
+      %br/
+    = render :partial => "users/shared/links"
+
+  %br{:style => "clear:both;"}

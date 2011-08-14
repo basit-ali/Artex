@@ -1,0 +1,21 @@
+
+<?php
+    if($pagination->setPaging($paging)):
+    $leftArrow = $html->image("nav/arrowleft.gif", Array('height'=>15));
+    $rightArrow = $html->image("nav/arrowright.gif", Array('height'=>15));
+    
+    $leftArrow = "Prev";
+		$rightArrow = "Next";
+		$prev = $pagination->prevPage($leftArrow,true);
+    $prev = $prev?$prev:$leftArrow;
+    $next = $pagination->nextPage($rightArrow,true);
+    $next = $next?$next:$rightArrow;
+
+    $pages = $pagination->pageNumbers(" ");
+//pr($pages);
+    //echo $pagination->result()."<br>";    
+		//echo "<ul><li>". $prev ."</li><li>".$pages."</li><li>".$next."</li></ul>";
+    if (eregi('2', $pages)){echo "<div class='paging'><ul><li>". $prev ."</li><li>".$pages."</li><li>".$next."</li></ul></div>";}
+		//echo $pagination->resultsPerPage(NULL, ' ');
+    endif;
+?>

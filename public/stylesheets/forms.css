@@ -1,0 +1,188 @@
+form h4 {
+  margin: 15px 0;
+  font-size: 1.1em;
+  font-weight: bold; }
+form .left-col {
+  width: 445px;
+  float: left;
+  margin-bottom: 30px; }
+form .right-col {
+  width: 220px;
+  float: left;
+  margin-bottom: 30px; }
+form .right-most-col {
+  width: 230px;
+  float: left;
+  margin-bottom: 30px;
+  margin-top: 0px; }
+form fieldset.divider {
+  clear: both;
+  margin-top: 15px;
+  border-top: 1px solid #cccccc; }
+form dl {
+  margin-bottom: 15px; }
+  form dl dt {
+    padding: 0 0 5px 0; }
+    form dl dt label {
+      font-weight: bold;
+      font-size: 90%; }
+  form dl dd input[type='text'], form dl dd input[type='password'] {
+    border: 1px solid #cccccc;
+    -webkit-border-radius: 0.25em;
+    -moz-border-radius: 0.25em;
+    background: #fafafa;
+    padding: 2px;
+    color: #606060;
+    font: inherit;
+    width: 194px;
+    height: 35px; }
+  form dl dd input[type='submit'] {
+    border: 1px solid #cccccc;
+    -webkit-border-radius: 0.25em;
+    -moz-border-radius: 0.25em;
+    background: #fafafa;
+    padding: 2px;
+    color: #606060;
+    font: inherit; }
+  form dl dd textarea {
+    border: 1px solid #cccccc;
+    -webkit-border-radius: 0.25em;
+    -moz-border-radius: 0.25em;
+    background: #fafafa;
+    padding: 2px;
+    color: #606060;
+    font: inherit;
+    max-height: 400px; }
+form dl.float {
+  margin-right: 20px;
+  float: left; }
+form dl.narrow dd input[type='text'], form dl.narrow dd input[type='password'] {
+  width: 96px; }
+form .actions {
+  margin-top: 20px;
+  clear: both; }
+  form .actions button {
+    padding: 0.4em 0.75em;
+    margin: 0 3px;
+    background: #dddddd url(/stylesheets/vendor/images/button-background.png) repeat-x;
+    font-weight: bold;
+    color: #333333;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    border: 1px solid #aaaaaa;
+    border-right-color: #a0a0a0;
+    border-bottom-color: #999999;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.33);
+    font-size: 0.85em;
+    position: relative;
+    text-decoration: none;
+    float: left;
+    cursor: pointer;
+    top: -5px; }
+  form .actions .button {
+    padding: 0.4em 0.75em;
+    margin: 0 3px;
+    background: #dddddd url(/stylesheets/vendor/images/button-background.png) repeat-x;
+    font-weight: bold;
+    color: #333333;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    border: 1px solid #aaaaaa;
+    border-right-color: #a0a0a0;
+    border-bottom-color: #999999;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.33);
+    font-size: 0.85em;
+    position: relative;
+    text-decoration: none;
+    float: left;
+    cursor: pointer; }
+form ul.radios label {
+  font-weight: bold;
+  font-size: 90%; }
+form .left_col_width {
+  width: 426px; }
+
+#register {
+  position: relative; }
+  #register h4 {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    font-weight: bold; }
+  #register fieldset.radios {
+    padding: 0 0 20px 0;
+    margin: 0 0 20px 0;
+    border-bottom: 1px solid #cccccc; }
+    #register fieldset.radios dl {
+      width: 420px;
+      margin: 0 10px;
+      float: left; }
+  #register fieldset.register-email {
+    width: 420px;
+    padding-top: 0;
+    border-right: 1px solid #cccccc; }
+    #register fieldset.register-email .actions {
+      float: left;
+      clear: none;
+      margin-top: 16px; }
+  #register .register-facebook {
+    position: absolute;
+    left: 420px;
+    bottom: 130px;
+    z-index: 1;
+    width: 300px;
+    padding: 0 0 0 30px;
+    border-left: 1px solid #cccccc; }
+  #register .actions button {
+    margin: 0 10px 0 0; }
+
+#new_donation dl#donation_name input[type=text] {
+  display: block; }
+#new_donation dl#donation_name dd label {
+  font-size: 80%; }
+#new_donation dl#donation_amount input[type=text] {
+  width: 60px;
+  text-indent: 0; }
+
+#new-project input[type="file"] {
+  margin: 0 0 10px 0; }
+#new-project img {
+  display: block;
+  margin: 0 0 15px 0; }
+#new-project p.explanation {
+  width: 400px;
+  font-size: 0.8em;
+  font-style: italic; }
+#new-project ul.radios {
+  padding: 0 0 8px 0; }
+
+#sign-in form#login {
+  float: left;
+  width: 375px;
+  border-right: 1px solid #cccccc; }
+#sign-in .actions {
+  padding: 0 0 20px 0; }
+  #sign-in .actions button {
+    margin: 0; }
+  #sign-in .actions p {
+    clear: both;
+    padding: 5px 0 0 0;
+    font-size: 0.9em;
+    color: #999999; }
+    #sign-in .actions p a {
+      margin: 0 5px; }
+      #sign-in .actions p a:first-child {
+        margin-left: 0; }
+#sign-in h4 {
+  padding: 0 0 10px 0;
+  margin: 0;
+  font-size: 1.1em;
+  font-weight: bold; }
+#sign-in .service_integration {
+  float: left;
+  padding: 0 0 0 20px;
+  margin: 0 0 0 -1px;
+  border-left: 1px solid #cccccc;
+  height: 210px; }
+#sign-in .manual-sign-in {
+  width: 375px;
+  float: left; }

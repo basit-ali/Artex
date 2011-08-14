@@ -1,0 +1,15 @@
+%dl
+  %dt= f.label "Logo Text"
+  %dd= f.text_field :logo_text
+%dl
+  %dt= f.label "Sketch / Specs"
+  %dd= f.file_field :upload
+%dl
+  %dt= f.label "Color Scheme"
+  %dd= f.password_field :color
+%dl
+  %dt= f.label "Business Usage"
+  %dd= f.password_field :usage
+%dl
+  %dt= f.label "Any idea from your side ? "
+  %dd= f.text_area :description, :style => "width: 500px; height: 300px;", :class => "text-area"

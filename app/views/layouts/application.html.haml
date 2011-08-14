@@ -1,0 +1,39 @@
+%html{:dir => "ltr", :lang => "en-US", :xmlns => "http://www.w3.org/1999/xhtml"}
+  %head
+    %title CreativeArts
+    %meta{:content => "text/html; charset=utf-8", "http-equiv" => "Content-type"}
+    = include_tiny_mce_if_needed
+    = stylesheet_link_tag  "style", 'jquery.jcarousel', 'index.css', 'index-kmd', 'ie6', 'slider'
+    = yield :head
+    = javascript_include_tag 'jquery-1.4.2.min', 'jquery.jcarousel.pack', 'func', 'slider',  :cache => true
+    = yield :tail
+    %script
+      :plain
+        stepcarousel.setup({
+            galleryid: 'mygallery', //id of carousel DIV
+            beltclass: 'belt', //class of inner "belt" DIV containing all the panel DIVs
+            panelclass: 'panel', //class of panel DIVs each holding content
+            autostep: {enable:true, moveby:1, pause:4000},
+            panelbehavior: {speed:500, wraparound:true, persist:true},
+            defaultbuttons: {enable: false, moveby: 2},
+            statusvars: ['statusA', 'statusB', 'statusC'], //register 3 variables that contain current panel (start), current panel (last), and total panels
+            contenttype: ['external'] //content setting ['inline'] or ['external', 'path_to_external_file']
+        });
+  %body
+    .shell
+      .border
+        = render :partial => 'shared/header'
+        - if notice.present?
+          .alert-message{:align => "center", :style => "margin-top: 15px;"}
+            .notice
+              %h2= notice
+        - if alert.present?
+          .alert-message{:align => "center", :style => "margin-top: 15px;"}
+            .alert
+              %h2= alert
+        #main
+          =# render :partial => 'shared/product_list'
+          = render :partial => 'shared/main_slider'
+          = yield
+          %br{:style => "clear:both;"}
+      = render :partial => 'shared/footer'

@@ -1,0 +1,13 @@
+#left-nav{:style => "float:left;"}
+  .leftnav-head
+    %img{:height => "38", :src => "/images/productslist-header.jpg", :width => "172"}
+  - products.each do |product|
+    .group_div{:onclick => "toggle_div('div_5')"}
+      %a{:href => ""}
+        =product.name
+    - product.sub_products.each do |sub_product|
+      #div_5{:style => "display: block;"}
+        #nav-tab{:onmouseout => "nav-tab", :onmouseover => "nav-tab-hover"}
+          %a{:href => ""}
+            =sub_product.name
+      %br{:style => "clear:both;"}
