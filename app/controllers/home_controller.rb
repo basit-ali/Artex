@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
   layout  'application'
-  expose(:sub_products){ SubProduct.find(:all) }
+  expose(:homes){ Home.find(:all) }
 
   def index
     render :layout => 'application'
